@@ -1,0 +1,16 @@
+:root {
+    --md-primary-fg-color:        #0098a1;
+}
+/* Maximum space for text block */
+.md-grid {
+  max-width: 85%; /* or 100%, if you want to stretch to full-width */
+}
+.table{
+  background-color: #0098a1;
+}
+.red {
+  color: #EE0F0F;
+}
+.grey {
+  color: #868686;
+}
