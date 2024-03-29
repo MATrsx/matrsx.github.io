@@ -1,7 +1,7 @@
 ---
 icon: material/puzzle
 ---
-
+ 
 # :material-puzzle: Customization
 Zusätzlich zu allen Möglichkeiten die MkDocs Material von Haus aus bietet, gibt es weitere für dieses Projekt erstellte Inhalte:
 
