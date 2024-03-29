@@ -1,0 +1,11 @@
+pages:
+  stage: deploy
+  image: dockerregistry.europe.phoenixcontact.com/python:latest
+  script:
+    - pip install --no-cache-dir --upgrade --trusted-host dockerregistry.europe.phoenixcontact.com mkdocs-material --index-url http://dockerregistry.europe.phoenixcontact.com/repository/pxc-pypi/simple
+    - mkdocs build --site-dir public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'

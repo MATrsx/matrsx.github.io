@@ -1,0 +1,135 @@
+site_name: IT-Wiki
+theme:
+  language: de
+  icon:
+      repo: fontawesome/brands/git-alt
+  name: material
+  custom_dir: overrides
+  logo: assets/img/logo.svg
+  favicon: assets/img/favicon-white.ico
+  font:
+    text: IBM Plex Sans
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.code.link
+    - content.footnote.tooltips
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.preview
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  static_templates:
+    - 404.html
+
+  plugins:
+    - type
+    - search
+    - group
+    - typeset
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Wechseln zum dunklen Modus
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Wechseln zum hellen Modus
+
+nav:
+  - Einführung: index.md
+  - Customization: customization.md 
+  - Projektmanagement: 
+    - 🦊Git(Lab): project_management/git.md
+  - Programmierung:
+    - 🐍Python: programming/python.md
+  - Datenbanken:
+    - 📫PostgreSQL: databases/postgresql.md
+  - Speicherung:
+    - Elektronische Datenspeicher: memory/electronic_data_storage.md
+    - Magnetische Datenspeicher: memory/magnetic_data_storage.md
+    - Optische Datenspeicher: memory/optical_data_storage.md
+    - RAID-Systeme: memory/raid.md
+    - Cloudspeicher: memory/cloud.md
+  - Diagramme & Darstellungen:
+    - 🀄BPMN: diagrams/bpmn.md
+    - Aktivitätsdiagramm: diagrams/activity_diagram.md
+
+extra_css:
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/admonitions.css
+  - https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css
+
+extra_javascript:
+  - https://code.jquery.com/jquery-3.6.0.slim.min.js
+  - https://cdn.datatables.net/2.0.2/js/dataTables.js
+  - assets/scripts/site.js
+
+#Repository
+repo_name: IT-Wiki
+repo_url: https://git-go.europe.phoenixcontact.com/EMGZ2E1/it-wiki/
+edit_uri: https://git-go.europe.phoenixcontact.com/EMGZ2E1/it-wiki/-/blob/dev/docs
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      toc_depth: 3
+      permalink: '🔗'
+
+#footer
+extra:
+  generator: false
+  # social:
+  #   - icon: material/email 
+  #     link: mailto:vkuschew@phoenixcontact.com
+  #     name: Fragen zu der Dokumentation?

@@ -1,0 +1,16 @@
+# IT Wiki
+
+!!! warning "Work in Progress"
+    Die gesamte Dokumentation ist noch in der Entwicklung und daher sind viele Punkte unvollständig oder gar nicht vorhanden
+
+## Einführung 
+Diese Dokumentation wurde mit [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) erstellt. Dieses IT-WIKI dient als Cheat-Sheet für alle Ausbildungsrelevanten Themen.
+
+## Struktur
+Die Dokumentation wird in Markdown verfasst. Eine Übersicht über alle Markdown Komponenten ist in der 
+
+## Ablauf
+
+### Neue Seite erstellen
+
+
