@@ -68,4 +68,4 @@ Für diese Dokumentation wurden für das inline end argument eigene width Option
 ```
 
 #### Admonition hinzufügen
-Eine Anleitung um neue Admonitions zu erstellen ist auf dem [MkDocs GitHub](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#customization) zu finden. Wenn du eine neue Admonition hinzufügen willst, kannst du diese in der [admonitions.css](assets/stylesheets/admonitions.css) Datei einfügen. 
+Eine Anleitung um neue Admonitions zu erstellen ist auf dem [MkDocs GitHub](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#customization) zu finden. Um eine neue Admonition zu erstellen, kannst du diese in der [admonitions.css](assets/stylesheets/admonitions.css) Datei einfügen. 
