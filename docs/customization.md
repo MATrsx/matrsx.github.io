@@ -6,7 +6,7 @@ icon: material/puzzle
 Zusätzlich zu allen Möglichkeiten die MkDocs Material von Haus aus bietet, gibt es weitere für dieses Projekt erstellte Inhalte:
 
 ## Admonitions
-Folgende Admonitions existieren zusätzlich:
+Folgende Admonitions existieren zusätzlich: 
 
 !!! image inline end "Bilder"
     
