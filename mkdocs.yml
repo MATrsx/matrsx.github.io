@@ -36,18 +36,6 @@ theme:
   static_templates:
     - 404.html
 
-  plugins:
-    - type
-    - search
-    - group
-    - typeset
-    - git-revision-date-localized:
-        enable_creation_date: true
-    - git-committers:
-        repository: MATrsx/wiki
-        branch: main
-    - git-authors
-
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -66,6 +54,15 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Wechseln zum hellen Modus
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: MATrsx/wiki
+      branch: main
+  - git-authors
 
 nav:
   - Einführung: index.md
