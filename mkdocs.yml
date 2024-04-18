@@ -41,6 +41,12 @@ theme:
     - search
     - group
     - typeset
+    - git-revision-date-localized:
+        enable_creation_date: true
+    - git-committers:
+        repository: MATrsx/wiki
+        branch: main
+    - git-authors
 
   palette:
     # Palette toggle for light mode
@@ -63,7 +69,8 @@ theme:
 
 nav:
   - Einführung: index.md
-  - Customization: customization.md 
+  - Customization: customization.md
+  - Markdown Syntax: md_syntax.md 
   - Projektmanagement: 
     - 🦊Git(Lab): project_management/git.md
   - Programmierung:
@@ -76,8 +83,10 @@ nav:
     - Optische Datenspeicher: memory/optical_data_storage.md
     - RAID-Systeme: memory/raid.md
     - Cloudspeicher: memory/cloud.md
+  - Mathematik:
+    - Generell: maths/general.md
   - Diagramme & Darstellungen:
-    - 🀄BPMN: diagrams/bpmn.md
+    - Sequenzdiagramm: diagrams/sequence_diagram.md
     - Aktivitätsdiagramm: diagrams/activity_diagram.md
 
 extra_css:
@@ -92,8 +101,8 @@ extra_javascript:
 
 #Repository
 repo_name: IT-Wiki
-repo_url: https://git-go.europe.phoenixcontact.com/EMGZ2E1/it-wiki/
-edit_uri: https://git-go.europe.phoenixcontact.com/EMGZ2E1/it-wiki/-/blob/dev/docs
+repo_url: https://github.com/MATrsx/wiki
+edit_uri: https://github.com/MATrsx/wiki/tree/main/docs
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -101,6 +110,11 @@ markdown_extensions:
   - footnotes
   - admonition
   - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.inlinehilite
   - pymdownx.highlight:
       anchor_linenums: true

@@ -46,10 +46,10 @@ Für diese Dokumentation wurden für das inline end argument eigene width Option
 
 ```
 
-!!! info inline end "Breite - Normal"
+!!! info inline end "Breite - Auto"
 
 ```
-!!! info inline end "Breite - Normal"
+!!! info inline end "Breite - Auto"
 
 ```
 
