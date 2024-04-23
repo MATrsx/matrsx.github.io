@@ -1,0 +1,95 @@
+:root {
+    --md-admonition-icon--image: url('../img/memory/raid/image-icon.svg');
+    --md-admonition-icon--aws: url('../img/memory/aws.svg');
+    --md-admonition-icon--azure: url('../img/memory/azure.svg');
+    --md-admonition-icon--gcp: url('../img/memory/gcp.svg');
+}
+
+/* CUSTOM INLINE WIDTH ADMONITIONS */
+.md-typeset .admonition.inline.w35 {
+    width: 35%;
+    margin-inline: auto;
+    margin-left: 2%;
+}
+
+.md-typeset .admonition.inline.w50 {
+    width: 50%;
+    margin-inline: auto;
+    margin-left: 2%;
+}
+
+.md-typeset .admonition.inline.w25 {
+    width: 25%;
+    margin-inline: auto;
+    margin-left: 2%;
+}
+
+.md-typeset .admonition.font18,
+.md-typeset details {
+  font-size: 16px
+}
+
+
+/* IMAGE ADMONITION */
+.md-typeset .admonition.image,
+.md-typeset details.image {
+  border-color: rgb(43, 155, 70);
+}
+.md-typeset .image > .admonition-title,
+.md-typeset .image > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+.md-typeset .image > .admonition-title::before,
+.md-typeset .image > summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--image);
+          mask-image: var(--md-admonition-icon--image);
+}
+
+/* AWS ADMONITION */
+.md-typeset .admonition.aws,
+.md-typeset details.aws {
+  border-color: rgb(255, 153, 0);
+}
+.md-typeset .aws > .admonition-title,
+.md-typeset .aws > summary {
+  background-color: rgba(255, 153, 0, 0.1);
+}
+.md-typeset .aws > .admonition-title::before,
+.md-typeset .aws > summary::before {
+  background-color: rgb(255, 153, 0);
+  -webkit-mask-image: var(--md-admonition-icon--aws);
+          mask-image: var(--md-admonition-icon--aws);
+}
+
+/* MICROSOFT AZURE ADMONITION */
+.md-typeset .admonition.azure,
+.md-typeset details.azure {
+  border-color: rgb(0, 127, 255);
+}
+.md-typeset .azure > .admonition-title,
+.md-typeset .azure > summary {
+  background-color: rgba(0, 127, 255, 0.1);
+}
+.md-typeset .azure > .admonition-title::before,
+.md-typeset .azure > summary::before {
+  background-color: rgb(0, 127, 255);
+  -webkit-mask-image: var(--md-admonition-icon--azure);
+          mask-image: var(--md-admonition-icon--azure);
+}
+
+/* GOOGLE DRIVE ADMONITION */
+.md-typeset .admonition.gcp,
+.md-typeset details.gcp {
+  border-color: rgb(15, 157, 88);
+}
+.md-typeset .gcp > .admonition-title,
+.md-typeset .gcp > summary {
+  background-color: rgba(15, 157, 88, 0.1);
+}
+.md-typeset .gcp > .admonition-title::before,
+.md-typeset .gcp > summary::before {
+  background-color: rgb(15, 157, 88);
+  -webkit-mask-image: var(--md-admonition-icon--gcp);
+          mask-image: var(--md-admonition-icon--gcp);
+}
